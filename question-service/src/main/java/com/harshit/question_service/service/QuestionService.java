@@ -64,7 +64,7 @@ public class QuestionService {
             int score = 0;
             for(Response r: responses){
                 Question question = questionDao.findById(r.getId()).get();
-                if(r.getContent().equals(question.getRightAnswer())){
+                if(r.getAnswer().equals(question.getRightAnswer())){
                     score++;
                 }
             }

@@ -8,5 +8,5 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class Response {
     private Integer id;
-    private String content;
+    private String answer;
 }
